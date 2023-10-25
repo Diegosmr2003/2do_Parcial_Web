@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Diseño WEB</title>
+
+
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS_CLASE/style.css">
+    
+
+
+
+
+   <!-- <style>
+        h1{ /*Todo lo h1 va a cambiar a los ajustes que ponga, se puede poner ,h2 y tambien cambia a los h2*/
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: indigo;
+        }
+        
+        select{
+            background-color: blueviolet;
+        }
+
+        table{
+            background-color: darkorange;
+            color: lime;
+        }
+        tbody{
+            background-color: brown;
+        }
+        .New_table tbody{
+            background-color: black;
+            color: aliceblue;
+        }
+        #birthdays{
+            background-color: blueviolet;
+        }
+    </style>-->
+
+</head> <!-- lo que ve google para ponerlo en la web, titulo y pequeña descripcion-->
+
+
+<body >
+    <div style="background-color: crimson; color: white;"> <!--Esto se llama in line styling, no es recomedable, solo para cosas en especifico-->
+        <h1>Diego Montoya</h1>
+        <img src="Images/SIUU.jpg" alt="Logo CMMP " width="400" height="300" style="position: relative; left: 400px;"/>
+        <p>Student at Universidad Panamericada. <br /> <!--br es el salto de linea-->
+            <em> Paseo de los Laureles 148 -</em> <strong> El Palomar</strong>
+            <!-- i: para tipo de letra italica, b: para negritas, o em enfatiza para preparar a la web para ser mejor analizada por los engines o en vez de negritas usar strong-->
+        </p>
+        <blockquote>"Luke I'm your father" -- Darth Vader</blockquote> <!-- blockquote se usa para citas-->
+    </div>
+
+    <div>
+    <nav>
+        <a href="Destination.html"> Favorites destinations</a> <br/>
+        <a href="http://facebook.com" alt = "Link to faceboook" target="_blank"> Facebook</a> <br/>
+        <a href="#birthdays" alt = Birthdays> Family birthdays </a>
+    </nav>
+    </div>
+
+    <hr>
+
+    <div style="background-color: blue">
+    <h2>Education</h2>
+    <ul>     
+        <!--Para agregar un nuevo "item en la lista poner <li"-->   
+        <li><em>2015 - 2020</em> <b>Tecnologico de Monterrey Campus Santa Anita</b></li>
+            <img class="logos" src="Images/TEC.png" width="300" height="300"/>
+        <li><em>2020 - 2021</em> <b>Universidad Autonoma de Guadalajara</b></li>
+             <img  class="logos" src="Images/UAG.png" width="300" height="300"/>
+        <li><em>2022 - 2023</em> <b>Universidad Panamericana</b></li>
+            <img  class="logos" src="Images/Universidad_Panamericana_Logo_Dorado.jpg" width="300" height="300"/>
+    </ul> <!--para hacer una lista sin orden, solo puntos, - unorderd list-->
+
+
+ <table border="1">
+        <tbody>
+            <tr>
+                <td rowspan="2"><a href="https://cmn.edu.mx/" target="_blank"> <img  class="logos" src="Images/unnamed.png " width="100" height="100"/></a></td>
+                <td><em> - 2006 - 2008</em></td>
+                
+            </tr>
+            <tr>
+                <td><b>Colegio Mexico Nuevo Campus Santa Anita</b></td>
+            </tr>
+        <!--***************************************************-->
+
+            <tr>
+                <td rowspan="2">  <img  class="logos" src="Images/Pedregal.jpg" width="150" height="150"/> </td>
+                <td><em> - 2009 - 2012</em></td>
+            </tr>
+            <tr>
+                <td><b>Colegio Pedregal Campus Santa Anita</b></td>
+            </tr>
+        <!--***************************************************-->
+        <tr>
+            <td rowspan="2"><a href="https://institutotepeyac.mx/" target="_blank"> <img  class="logos" src="Images/IT.jpeg" width="100" height="100"/></a> </td>
+            <td> - <em>2012 - 2015 -</em></td>
+        </tr>
+        <tr>
+            <td><b>Intituto Tepeyac Campus Santa Anita</b></td>
+        </tr>
+        <!--***************************************************-->
+        </tbody>
+     </table>
+
+    </div>
+
+    
+    <hr>
+    <div style="background-color: coral">
+        <ul>        
+            <li>
+                <h2>Top - 3 movies </h2>
+            </li>
+
+            <ol>
+                <li>Your name</li>
+                <li>La la land</li>
+                <li> Soutpaw</li>
+            </ol>
+
+            <li>
+                <h2>Top - 3 books</h2>
+            </li>
+
+            <!--  el tag span crea una region, sirve para aplicar estilos
+            El tag p es para hacer un parrafo deja u poco de espacio antes y despues-->
+
+
+            <ol>
+                <li> A song of ice & fire</li>
+                <li> Como hacer amigos e influir sobre las personas</li>
+                <li>El extrangero</li>
+            </ol>
+
+            <li>
+                <h2> Top Tv - shows</h2>
+            </li>
+            <ol>
+                <li> Game of Thrones</li>
+                <li>Breaking bad</li>
+                <li>Monster</li>
+            </ol>
+        </ul>
+
+        <h2>Bottom - 3</h2>
+        <ol type="1" start="18"> <!--type es para tipo y start para ver desde que numero empieza-->
+            <li>Shrek</li>
+            <li>Coach Carter</li>
+            <li>Her</li>
+        </ol>
+    </div>
+
+        <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/WhatsApp-Image-2022-09-17-at-15.11.21.jpeg" width="50%" height="50%" /> <!--toma la imagen de internet, no es muy recomendado-->
+    
+    <hr>
+    <div style="background-color: darkviolet">
+        <h3>Skills</h3>
+        <ol class="Skills">
+            <li> 80% English language</li>
+            <li> 110% Bench Press</li>
+            <li>100% natty</li>
+            <li>10% med student</li>
+            <li>20% informatic student</li>
+            <li>90% Carrying the boats</li>
+        </ol> <!--para hacer una lista ordenada con numeros - unorderd list-->
+    </div>
+
+
+    <hr>
+
+    <div style="background-color: tomato">
+    
+         <h2 id="birthdays"> Family birthdays</h2>
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th colspan="2">NAME</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th> - Name - </td>
+                        <th> - Last name -</th>
+                    <th> - Birthday - </td>
+                </tr>      
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">F</td>
+                    <td> - Ana - </td>
+                    <td> - Perez- </td>
+                    <td> - July 28 - </td>
+                </tr>
+
+                <tr>
+                    <td> - Juan - </td>
+                    <td> - Dominguez -</td>
+                    <td> - December 2 - </td>
+                </tr>
+
+                <tr>
+                    <td> - Luis - </td>
+                    <td> - Schrute - </td>
+                    <td> - September 9 - </td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>      
+        </table> <br> <br>
+    </div>
+
+    <div style="background-color: gold">
+        <form action="#" method="get">
+            <table class="New_table">
+                <tbody> <!--Este es el cuerpo de la tabla-->
+                    <tr>
+                        <td><label for="Usr_Name">Name</label></td>
+                        <td><input type="text" name="Usr_Name" placeholder="Full name"> </td>
+                    </tr> 
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="Usr_email"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="color" name="Usr_color_choice"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><select name="usr_seleciton">
+                            <option value="OPT1"> Job opportunities</option>
+                            <option value="OPT2" > Social interaction</option>
+                            <option value="OPT3"> Research opportunities</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Si</td>
+                        <td><input type="checkbox" name="usr_SI"></td>
+                    </tr>
+                    <tr>
+                        <td>HIDDEN</td>
+                        <td><input type="hidden" name="Usr_Hidden" value="Hidden1"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea cols="50" rows="10" placeholder="Message" name="usr_msg"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <input type="submit" value="hit me"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="Images/SIUU.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO &amp; Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="Images/SPIDERMAN.png" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="Images/CAPITAN.png" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+</html>
