@@ -1,0 +1,55 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background: rgb(25, 25, 25);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dice {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background: rgb(40, 40, 40);
+  color: rgb(117, 14, 33);
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background: rgb(25, 25, 25);
+  color: #fff;
+  margin: 0;
+}
+
+h1 {
+  margin: 20px;
+  font: 4rem 'Lobster', cursive;
+  text-shadow: 3px 3px 5px rgba(227, 101, 29, 0.8);
+  color: rgb(117, 14, 33);
+}
+
+p {
+  font: 1.5rem 'Indie Flower', cursive;
+  color: rgb(190, 215, 84);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 5%;
+  padding: 10px;
+  color: #EEE;
+  text-align: center;
+  font: 'Indie Flower', cursive;
+  background: rgb(40, 40, 40);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
